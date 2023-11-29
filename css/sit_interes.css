@@ -1,0 +1,180 @@
+
+/*Efectos Nav*/
+.headerPrincipal-nav-link:hover{
+    transform: scale(1.1);
+    font-size: 220%;        
+    transition: 0.3s;
+}
+/*----------------------------------body--------------------------------------*/
+.sec1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.sec1_img{
+    padding-top: 20px;
+    width: max-content;
+}
+.sec1_tit{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    margin: auto;
+}
+.sec1_descripcion{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    text-align: justify;
+}
+.sec1_documento{
+    padding-block: 10px;
+    padding-left: 15px;
+    color: blueviolet;
+    text-decoration: none;
+}
+.sec1_butt{
+    padding-left: 15px;
+    padding-top: 15px;
+}
+.sec1_boton{
+    width: 10em;
+    height: 3.5em;
+    background-color: rgb(42, 108, 165);
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    color: white;
+}
+.sec1_boton
+    .sec2{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .sec2_tit{
+        padding-left: 10px;
+        padding-bottom: none;
+    }
+    .sec2_subtit{
+        color: blueviolet;
+        font-weight: bold;
+        font-style: italic;
+        padding-left: 10px;
+
+    }
+    .sec2_descripcion{
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: justify;
+
+    }
+    .sec2_descripcion2{
+        padding-left: 30px;
+        padding-right: 10px;
+        text-align: justify;
+    }
+
+/*----------------------------------foot--------------------------------------*/
+.foot {
+    background:#383E45;       
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.foot-sitios{
+    justify-content: space-between;
+    
+}
+   .foot-sitios-tit{
+    color: whitesmoke;
+    
+    
+}
+.foot-link{
+    padding-bottom: 4px;
+    margin-left: 15px;
+    text-decoration: none;
+    color:rgb(173, 128, 214);
+    
+}
+
+.acerca-tit{
+    color: whitesmoke;
+}
+.acerca-txt{
+    color: rgb(173, 128, 214);
+    text-align: justify;
+    margin-left: 5px;
+    margin-right: 10px;
+    padding: 2px;
+    
+}
+
+.contact-tit{
+    color: whitesmoke;
+}
+
+.contact-li{
+    color: rgb(173, 128, 214);
+    text-decoration: none;
+    padding:2px;
+}
+
+.footer .wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 440px;
+}
+.foot-contactos{
+    color: whitesmoke;
+}
+
+.wrapper ul{
+    list-style-type: none;
+}
+.wrapper ul li{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0px 5px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    /*border: 2px solid white;*/
+    float: left;
+    transition: all 0.5 ease;
+}
+footer .facebook:hover{
+    border: 3.5px solid rgb(41, 30, 198);
+    transition: all 0.5 ease;
+}
+footer .instagram:hover{
+    border: 3.5px solid rgb(215, 25, 202);
+    transition: all 0.5 ease;
+}
+footer .tiktok:hover{
+    border: 3.5px solid rgb(186, 79, 21);
+    transition: all 0.5 ease;
+}
+footer .whatsapp:hover{
+    border: 3.5px solid rgb(15, 138, 32);
+    transition: all 0.5 ease;
+}
+
+.foot-copy{
+    color: aliceblue;
+}

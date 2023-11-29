@@ -1,0 +1,351 @@
+@media only screen and (min-device-width : 1251px) and (max-device-width : 1800px){
+    .planes-prin{
+        min-height: 100vh;
+        width: 90%;
+        outline: 0px solid #000;
+        margin: 0 auto;
+        display:grid;
+        grid-template-columns: 
+        repeat(auto-fit,minmax(min(350px,100%),1fr));
+        gap: 30px;
+       }
+    
+       
+    
+    /*==========================MODAL 1 Y PLAN 1==============================*/
+    .modal-open{
+        display: inline;
+        margin: 0.5rem;
+        background-color: transparent;
+        border-color: transparent;
+    }
+    .modal-open:hover{
+        transform: scale(1.05);
+        transform: rotate(2deg);
+    }
+    .modal-img{
+        width: 100%;
+       height: 100%;
+       object-fit: cover;
+    }
+    .modal{
+        position: fixed;
+        top:0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color:rgba(0,0,0,0.6);
+        height: 100%;
+        z-index: 2;
+        display :none;
+    }
+    .modal__content{
+        background-color: whitesmoke;
+        text-align: center;
+        margin-top: 1.5rem;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 8px 24px;
+        border-radius:4px ;
+        z-index: 4;
+        transition: all .3s;
+        transform: translateY(10%);
+    }
+    .modalcx{
+        display: inline-flex;
+        background-color:blueviolet;
+        font-size: 1rem;
+        position: absolute;
+        top: 0.2rem;
+        right: 0.5rem;    
+        border-radius: 2px;
+        cursor: pointer;
+    }
+    .modal__title{
+        color: darkblue;
+        font-size:xx-large;
+        font-weight: 500;  
+    }
+    .modal__txt{
+        margin-bottom: 1.5rem;
+    }
+    .modal__terminos{
+        color: darkblue;
+        font-size:medium;
+        font-weight: 500;  
+    }
+    .modal__btnwp{
+        background-color: blueviolet;
+        border-radius: 4px;
+        font-size: 1.2rem;
+    }
+    .modal__btnwp:hover{
+        transform: scale(1.2);
+        transform: rotate(0);
+    }
+    .modal__btn-width{
+        width: 90%; 
+    }
+    .modal__btn-link{
+        display: block;
+        margin: 1rem auto 0;
+        font-weight: bolder;
+        color: whitesmoke;
+        background-color: blueviolet;
+        font-weight: 500;
+        width: 20%;
+        border-radius: 4px;
+    }
+    .cobertura{
+        min-height: 100vh;
+        width: 90%;
+        outline: 0px solid #000;
+        margin: 0 auto;
+        display:grid;
+        grid-template-columns: 
+        repeat(auto-fit,minmax(min(350px,100%),1fr));
+        gap: 30px;
+    }
+    .cobertura-content{
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (min-device-width : 601px) and (max-device-width : 1250px){
+/*------------------------------inicio planes----*/
+.planes-prin{
+    min-height: 100vh;
+    width: 80%;
+    outline: 0px solid #000;
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: 
+    repeat(auto-fit,minmax(min(350px,100%),1fr));
+    gap: 30px;
+   }
+
+   
+
+/*==========================MODAL 1 Y PLAN 1==============================*/
+.modal-open{
+    display: inline;
+    margin: 0.5rem;
+    background-color: transparent;
+    border-color: transparent;
+}
+.modal-open:hover{
+    transform: scale(1.05);
+    transform: rotate(2deg);
+}
+.modal-img{
+    width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.modal{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(0,0,0,0.6);
+    height: 100%;
+    z-index: 2;
+    display :none;
+}
+.modal__content{
+    background-color: whitesmoke;
+    text-align: center;
+    margin-top: 1.5rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 24px;
+    border-radius:4px ;
+    z-index: 4;
+    transition: all .3s;
+    transform: translateY(10%);
+}
+.modalcx{
+    display: inline-flex;
+    background-color:blueviolet;
+    font-size: 1rem;
+    position: absolute;
+    top: 0.2rem;
+    right: 0.5rem;    
+    border-radius: 2px;
+    cursor: pointer;
+}
+.modal__title{
+    color: darkblue;
+    font-size:xx-large;
+    font-weight: 500;  
+}
+.modal__txt{
+    margin-bottom: 1.5rem;
+}
+.modal__terminos{
+    color: darkblue;
+    font-size:medium;
+    font-weight: 500;  
+}
+.modal__btnwp{
+    background-color: blueviolet;
+    border-radius: 4px;
+    font-size: 1.2rem;
+}
+.modal__btnwp:hover{
+    transform: scale(1.2);
+    transform: rotate(0);
+}
+.modal__btn-width{
+    width: 90%; 
+}
+.modal__btn-link{
+    display: block;
+    margin: 1rem auto 0;
+    font-weight: bolder;
+    color: whitesmoke;
+    background-color: blueviolet;
+    font-weight: 500;
+    width: 20%;
+    border-radius: 4px;
+}
+.cobertura{
+    min-height: 100vh;
+    width: 90%;
+    outline: 0px solid #000;
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: 
+    repeat(auto-fit,minmax(min(350px,100%),1fr));
+    gap: 30px;
+}
+.cobertura-content{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+/*=============================================*/
+
+
+    /*---------------------------------------fin planes----*/
+}
+@media screen and (max-width:600px){
+    .planes-prin{
+        min-height: 100vh;
+        width: 80%;
+        outline: 0px solid #000;
+        margin: 0 auto;
+        display:grid;
+        grid-template-columns: 
+        repeat(auto-fit,minmax(min(350px,100%),1fr));
+        gap: 30px;
+       }
+    
+       
+    
+    /*==========================MODAL 1 Y PLAN 1==============================*/
+    .modal-open{
+        display: inline;
+        margin: 0.5rem;
+        background-color: transparent;
+        border-color: transparent;
+    }
+    .modal-open:hover{
+        transform: scale(1.05);
+        transform: rotate(2deg);
+    }
+    .modal-img{
+        width: 100%;
+       height: 100%;
+       object-fit: cover;
+    }
+    .modal{
+        position: fixed;
+        top:0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color:rgba(0,0,0,0.6);
+        height: 100%;
+        z-index: 2;
+        display :none;
+    }
+    .modal__content{
+        background-color: whitesmoke;
+        text-align: center;
+        margin-top: 1.5rem;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 8px 24px;
+        border-radius:4px ;
+        z-index: 4;
+        transition: all .3s;
+        transform: translateY(10%);
+    }
+    .modalcx{
+        display: inline-flex;
+        background-color:blueviolet;
+        font-size: 1rem;
+        position: absolute;
+        top: 0.2rem;
+        right: 0.5rem;    
+        border-radius: 2px;
+        cursor: pointer;
+    }
+    .modal__title{
+        color: darkblue;
+        font-size:xx-large;
+        font-weight: 500;  
+    }
+    .modal__txt{
+        margin-bottom: 1.5rem;
+    }
+    .modal__terminos{
+        color: darkblue;
+        font-size:medium;
+        font-weight: 500;  
+    }
+    .modal__btnwp{
+        background-color: blueviolet;
+        border-radius: 4px;
+        font-size: 1.2rem;
+    }
+    .modal__btnwp:hover{
+        transform: scale(1.2);
+        transform: rotate(0);
+    }
+    .modal__btn-width{
+        width: 90%; 
+    }
+    .modal__btn-link{
+        display: block;
+        margin: 1rem auto 0;
+        font-weight: bolder;
+        color: whitesmoke;
+        background-color: blueviolet;
+        font-weight: 500;
+        width: 20%;
+        border-radius: 4px;
+    }
+    .cobertura{
+        min-height: 100vh;
+        width: 90%;
+        outline: 0px solid #000;
+        margin: 0 auto;
+        display:grid;
+        grid-template-columns: 
+        repeat(auto-fit,minmax(min(350px,100%),1fr));
+        gap: 30px;
+    }
+    .cobertura-content{
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }  
+}

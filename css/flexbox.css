@@ -1,0 +1,21 @@
+.headerPrincipal .container {
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.head_logo{
+    
+    display:flex
+}
+
+.headerPrincipal-nav {
+    display: flex;
+}
+.contenidoPrincipal-planes {
+    flex-direction: column;
+}
+
+.contenidoPrincipalPlanes {
+    width: 100%;
+}

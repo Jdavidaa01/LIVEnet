@@ -1,0 +1,323 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+/*----------------------------header--------                ------------*/
+header{
+    padding: 0 10px;
+    background: linear-gradient(-65deg, blue, rgb(209, 48, 177));
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    color: azure;
+}
+header li{
+    list-style: none;
+}
+header a{
+    color:whitesmoke;
+    text-decoration: none;
+}
+.nav-bar{
+    min-height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+.nav-branding{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+   
+}
+.nav-link{
+    transition: 0.7s ease;
+    margin: 2rem;
+    
+}
+.nav-link:hover{
+    color:dodgerblue;
+    font-size: 13px;
+    font-weight: bolder;
+
+}
+.hamburger{
+    display: none;
+    cursor:pointer
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin:5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: whitesmoke;
+}
+/*-----------------------body-----------*/
+
+body{
+    font-family: 'Roboto',sans-serif;    
+}
+h1{font-size: 3em;}
+h2{font-size: 2.3em;}
+h3{font-size: 1.7;}
+p{font-size: 1.25;}
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------PIE DE PAGINA------------------------------------------------------------------*/
+.foot {
+    background:#383E45;       
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.foot-sitios{
+    justify-content: space-between;
+    
+}
+   .foot-sitios-tit{
+    color: whitesmoke;
+    margin-top: 20px;
+    margin-bottom: 7px;  
+    
+}
+.foot-link{
+    padding-bottom: 4px;
+    margin-left: 15px;
+    text-decoration: none;
+    color:rgb(173, 128, 214);
+    
+}
+
+.acerca-tit{
+    color: whitesmoke;
+    margin-top: 20px;
+    margin-bottom: 7px;
+}
+.acerca-txt{
+    color: rgb(173, 128, 214);
+    text-align: justify;
+    margin-left: 5px;
+    margin-right: 10px;
+    padding: 2px;
+    
+}
+
+.contact-tit{
+    color: whitesmoke;
+    margin-top: 20px;
+    margin-bottom: 7px;
+}
+
+.contact-li{
+    color: rgb(173, 128, 214);
+    text-decoration: none;
+    padding:2px;
+}
+
+.footer .wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 440px;
+}
+.foot-contactos{
+    color: whitesmoke;
+    margin-top: 20px;
+    margin-bottom: 7px;
+}
+
+.wrapper ul{
+    list-style-type: none;
+}
+.wrapper ul li{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0px 5px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    float: left;
+    transition: all 0.5 ease;
+}
+footer .facebook:hover{
+    border: 3.5px solid rgb(41, 30, 198);
+    transition: all 0.5 ease;
+}
+footer .instagram:hover{
+    border: 3.5px solid rgb(215, 25, 202);
+    transition: all 0.5 ease;
+}
+footer .tiktok:hover{
+    border: 3.5px solid rgb(186, 79, 21);
+    transition: all 0.5 ease;
+}
+footer .whatsapp:hover{
+    border: 3.5px solid rgb(15, 138, 32);
+    transition: all 0.5 ease;
+}
+
+.foot-copy{
+    color: aliceblue;
+}
+/*-------------------------mobile---------------------*/
+@media(max-width:768px){
+    
+    .hamburger{
+        
+        display: block;
+    }
+    .hamburger.activate .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.activate .bar:nth-child(1){
+        transform: translate(8px) rotate(45deg);
+    }
+    .hamburger.activate .bar:nth-child(3){
+        transform: translate(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top:70px;
+        gap:0;
+        flex-direction: column;
+        background: linear-gradient(-65deg, blue, rgb(209, 48, 177));
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        color: blue;
+        z-index: 30;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.activate{
+        left: 0;
+    }
+    /*--------------------------------------------------------------------------------------------------------------------------------*/
+    /*------------------------------------------------PIE DE PAGINA mobile------------------------------------------------------------*/
+    
+    .foot {
+        background:#383E45;       
+    }
+    footer .container{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .foot-sitios{
+        justify-content: space-between;
+        
+    }
+       .foot-sitios-tit{
+        color: whitesmoke;
+        margin-top: 20px;
+        margin-bottom: 7px;
+    }
+    .foot-link{
+        
+        padding-bottom: 4px;
+        margin-left: 15px;
+        text-decoration: none;
+        color:rgb(173, 128, 214);
+        
+    }
+    
+    .acerca-tit{
+        color: whitesmoke;
+        margin-top: 20px;
+        margin-bottom: 7px;
+    }
+    .acerca-txt{
+        color: rgb(173, 128, 214);
+        text-align: justify;
+        margin-left: 5px;
+        margin-right: 10px;
+        padding: 2px;
+        
+    }
+    
+    .contact-tit{
+        color: whitesmoke;
+        margin-top: 20px;
+        margin-bottom: 7px;
+    }
+    
+    .contact-li{
+        color: rgb(173, 128, 214);
+        text-decoration: none;
+        padding:2px;
+    }
+
+    .footer .wrapper{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 440px;
+    }
+    .foot-contactos{
+        color: whitesmoke;
+        margin-top: 20px;
+        margin-bottom: 7px;
+    }
+
+    .wrapper ul{
+        list-style-type: none;
+    }
+    .wrapper ul li{
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        margin: 0px 5px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 50%;
+        float: left;
+        transition: all 0.5 ease;
+    }
+    footer .facebook:hover{
+        border: 3.5px solid rgb(41, 30, 198);
+        transition: all 0.5 ease;
+    }
+    footer .instagram:hover{
+        border: 3.5px solid rgb(215, 25, 202);
+        transition: all 0.5 ease;
+    }
+    footer .tiktok:hover{
+        border: 3.5px solid rgb(186, 79, 21);
+        transition: all 0.5 ease;
+    }
+    footer .whatsapp:hover{
+        border: 3.5px solid rgb(15, 138, 32);
+        transition: all 0.5 ease;
+    }
+    
+    .foot-copy{
+        color: aliceblue;
+    }
+}

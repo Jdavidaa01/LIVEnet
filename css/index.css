@@ -1,0 +1,328 @@
+/*========================================================ESCRITORIO=================================================================*/
+@media only screen and (min-device-width : 601px) and (max-device-width : 1605px) {
+    #hero{
+        display:none;
+    }
+   
+    .caption{
+        display: none;
+        
+    }
+  
+    button{        
+        font-size: 1.25em;
+        font-weight: bold;
+        padding: 10px 30px;
+        border-radius: 5px;
+        border: 2px solid rgba(0, 0, 0, 0.3);
+        color: white;
+        background-color: blueviolet;
+    }
+    button:hover{
+        transform: scale(1.2);
+        background-color: rgb(71, 14, 124);
+    }
+
+    .color-acento{color:blueviolet}
+/*====================================================slider==================================*/
+#container-slider
+{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+#slider {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 50vh;
+    min-height: 500px;
+}
+#slider li {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100%;
+    height: 100%;
+    display: block;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    z-index: -1;
+    opacity: 0;
+}
+#container-slider .arrowPrev, #container-slider .arrowNext{
+    font-size: 30pt;
+    color: rgba(204, 204, 204, 0.65);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    z-index: 2; 
+}
+#container-slider .arrowNext {
+    left: initial;
+    right: 50px !important;
+}
+.content_slider{
+    padding: 15px 30px;
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+}
+.content_slider div{
+    text-align: center;
+}
+.content_slider h2{
+    font-family: 'arial';
+    font-size: 30pt;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.content_slider p {
+    font-size: 15pt;
+    font-family: 'arial';
+    color: #FFF;
+    margin-bottom: 20px;
+}
+#slider li .content_slider{
+    background: rgba(0, 0, 0, 0.50);
+    padding: 10px 125px;
+}
+.content_slider{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnSlider{
+    display: none;
+    color: #FFF;
+    font-size: 15pt;
+    font-family: 'arial';
+    letter-spacing: 1px;
+    padding: 10px 50px;
+    border: 1px solid #CCC;
+    background: rgba(37, 40, 80, 0.55);
+    border-radius: 31px;
+    text-decoration: none;
+    transition: .5s all;
+}
+.btnSlider:hover{
+    display: none;
+    background: #111;
+    border: 1px solid #111;
+}
+.listslider {
+    position: absolute;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 50%;
+    bottom: 5%;
+    list-style: none;
+    z-index: 2;
+    transform: translateX(-50%);
+}
+.listslider li {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.listslider li a {
+    background: #CCC;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.item-select-slid {
+    background: #FFF  !important;
+}
+
+/*===========================================fin====slider==================================*/
+    #somos-livenet .container{
+        text-align: center;
+        padding: 60px 12px;
+    }
+   
+    .somos-txt{
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: justify;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    
+    /*----------------------------------------------PLANES-----------------*/
+    #nuestros-planes{
+        background: linear-gradient(-65deg, blue, rgb(209, 48, 177));
+        color:whitesmoke;
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+    #nuestros-planes .container{
+        padding: 150px 12px;
+        display: flex;
+        align-items: center;
+    }
+    #nuestros-planes h2{
+        margin-top: 0;
+        font-size: 3.5em;
+    }
+    #nuestros-planes h3{
+        margin-top: 0;
+        font-size: 3.2em;
+    }
+    #nuestros-planes p{
+        display: none;
+    }
+   .planes-prin{
+    min-height: 40vh;
+    width: 90%;
+    outline: 0px solid #000;
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: 
+    repeat(auto-fit,minmax(min(350px,100%),1fr));
+    gap: 30px;
+   }
+   .planes_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   }
+}
+/*=======================================================MOBILE======================================================================*/
+@media screen and (max-width:600px){
+
+    #hero{
+        display: block;
+        height: 30vh;
+        width: max-content;
+        background: linear-gradient(-65deg, blue, rgb(209, 48, 177));
+    }
+    #hero ::after{
+        display: block;
+        width: max-content;
+        height: min-content;
+        content: "";
+        position:absolute;
+        background: rgba(0,0,0,0.5);
+        z-index: 10;
+
+    }
+    #hero video{
+        display: block;
+        width: 100%;
+        height: 45%;
+        position: absolute;
+        margin-bottom: 10px;
+        left: 0;
+        z-index: 0;
+        object-fit: cover;
+    }
+    .caption{
+        display: block;
+        display: flex;
+        margin-top:10em;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        
+    }
+    #container-slider{
+        display:none;
+    }
+    
+    button{
+        
+        font-size: 1.25em;
+        font-weight: bold;
+        padding: 10px 30px;
+        border-radius: 5px;
+        border: 2px solid rgba(0, 0, 0, 0.3);
+        color: white;
+        background-color: blueviolet;
+    }
+    button:hover{
+        transform: scale(1.2);
+        background-color: rgb(71, 14, 124);
+    }
+
+    .color-acento{color:blueviolet}
+
+    #somos-livenet .container{
+        text-align: center;
+        padding: 60px 12px;
+    }
+   
+    .somos-txt{
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: justify;
+    }
+    .video{
+        display: flex;
+        width: max-content;
+        height: 300px;
+    }
+    /*----------------------------------------------PLANES-----------------*/
+    #nuestros-planes{
+        background: linear-gradient(-65deg, blue, rgb(209, 48, 177));
+        color:whitesmoke;
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+    #nuestros-planes .container{
+        padding: 150px 12px;
+    }
+    #nuestros-planes h2{
+        margin-top: 0;
+        font-size: 3.5em;
+    }
+    #nuestros-planes h3{
+        margin-top: 0;
+        font-size: 3.2em;
+    }
+    #nuestros-planes p{
+        display: none;
+    }
+    .planes-prin{
+        min-height: 40vh;
+        width: 90%;
+        outline: 0px solid #000;
+        margin: 0 auto;
+        display:grid;
+        grid-template-columns: 
+        repeat(auto-fit,minmax(min(350px,100%),1fr));
+        gap: 30px;
+       }
+       .planes_img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+       }
+    
+}
+  
+
+    
