@@ -78,28 +78,24 @@ p{font-size: 1.25;}
     background:#383E45;       
 }
 footer .container{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    display:grid;
+    grid-template-columns: 
+    repeat(auto-fit,minmax(min(350px,100%),1fr));
+    gap: 20px;
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-left: 10px;
+    padding-right: 20px;
     margin-right: auto;
     margin-left: auto;
-}
-.foot-sitios{
-    justify-content: space-between;
-    
 }
    .foot-sitios-tit{
     color: whitesmoke;
     margin-top: 20px;
     margin-bottom: 7px;  
     
-}
+}   
 .foot-link{
-    padding-bottom: 4px;
-    margin-left: 15px;
+    display: grid;
     text-decoration: none;
     color:rgb(173, 128, 214);
     
@@ -107,47 +103,32 @@ footer .container{
 
 .acerca-tit{
     color: whitesmoke;
-    margin-top: 20px;
-    margin-bottom: 7px;
 }
 .acerca-txt{
     color: rgb(173, 128, 214);
-    text-align: justify;
-    margin-left: 5px;
-    margin-right: 10px;
-    padding: 2px;
-    
+    text-align: justify;    
 }
 
 .contact-tit{
     color: whitesmoke;
-    margin-top: 20px;
-    margin-bottom: 7px;
 }
 
 .contact-li{
+    display: grid;
     color: rgb(173, 128, 214);
     text-decoration: none;
     padding:2px;
 }
 
-.footer .wrapper{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 440px;
-}
+
 .foot-contactos{
     color: whitesmoke;
-    margin-top: 20px;
-    margin-bottom: 7px;
 }
 
-.wrapper ul{
+.wrapperf ul{
     list-style-type: none;
 }
-.wrapper ul li{
+.wrapperf ul li{
     width: 35px;
     height: 35px;
     line-height: 35px;
@@ -214,7 +195,7 @@ footer .whatsapp:hover{
         left: 0;
     }
     /*--------------------------------------------------------------------------------------------------------------------------------*/
-    /*------------------------------------------------PIE DE PAGINA mobile------------------------------------------------------------*/
+    /*------------------------------------------------PIE DE PAGINA mobile-----------------------------------------------------------
     
     .foot {
         background:#383E45;       
@@ -319,5 +300,5 @@ footer .whatsapp:hover{
     
     .foot-copy{
         color: aliceblue;
-    }
+    }-*/
 }
