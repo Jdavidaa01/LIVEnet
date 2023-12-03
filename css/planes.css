@@ -8,10 +8,7 @@
         grid-template-columns: 
         repeat(auto-fit,minmax(min(350px,100%),1fr));
         gap: 30px;
-       }
-    
-       
-    
+       }    
     /*==========================MODAL 1 Y PLAN 1==============================*/
     .modal-open{
         display: inline;
