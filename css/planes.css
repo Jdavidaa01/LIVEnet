@@ -109,7 +109,7 @@
     }
     .cobertura-content{
         width: 100%;
-        height: 50vh;
+        height: 100vh;
         object-fit: cover;
     }
 }
