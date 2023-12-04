@@ -19,13 +19,9 @@
         grid-template-columns: 
         repeat(auto-fit,minmax(min(350px,100%),1fr));
         gap: 30px;
+        background-image: url("\img\1339.jpg");
        }    
-       .fondo{
-        background-image: url("/img/1239.jpg");
-        width: 100%;
-        opacity: 30%;
-       }
-
+      
     /*==========================MODAL 1 Y PLAN 1==============================*/
     .modal-open{
         display: inline;

@@ -2,6 +2,11 @@
    @media only screen and (min-device-width : 601px) and (max-device-width : 1605px){
     
     /*                               inicio body                               */
+    .test-tit{
+        background: linear-gradient(-65deg, blue, rgb(209, 48, 177));
+        color: whitesmoke;
+        text-align: center;
+       }
     #container-slider
 {
     position: relative;
@@ -130,6 +135,11 @@
     background: #FFF  !important;
 }
 @media screen and (max-width:600px){
+    .test-tit{
+        background: linear-gradient(-65deg, blue, rgb(209, 48, 177));
+        color: whitesmoke;
+        text-align: center;
+       }
     .content_slider h2 {
         font-size: 15pt !important;
     }
@@ -159,4 +169,4 @@
 }
                                     /*---------PIE       DE          PAGINA CSS------*/
     
-   }/*       FIN VERSION CELULAR*/
+}/*       FIN VERSION CELULAR*/

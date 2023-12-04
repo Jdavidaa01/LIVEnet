@@ -156,6 +156,11 @@
 }
 
 /*===========================================fin====slider==================================*/
+   .test-tit{
+    background: linear-gradient(-65deg, blue, rgb(209, 48, 177));
+    color: whitesmoke;
+    text-align: center;
+   }
     #somos-livenet .container{
         text-align: center;
         padding: 60px 12px;
@@ -338,6 +343,11 @@
         height: 300px;
     }
     /*----------------------------------------------PLANES-----------------*/
+    .test-tit{
+        background: linear-gradient(-65deg, blue, rgb(209, 48, 177));
+        color: whitesmoke;
+        text-align: center;
+       }
     .cont-tit-color{
         color:rgb(12, 12, 129);
     }
