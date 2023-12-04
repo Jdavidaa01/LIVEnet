@@ -19,7 +19,7 @@
         grid-template-columns: 
         repeat(auto-fit,minmax(min(350px,100%),1fr));
         gap: 30px;
-        background-image: url("\img\1339.jpg");
+        
        }    
       
     /*==========================MODAL 1 Y PLAN 1==============================*/
@@ -107,6 +107,13 @@
         width: 20%;
         border-radius: 4px;
     }
+    #cobertura{
+        background: linear-gradient(-65deg, blue, rgb(209, 48, 177));
+        color: whitesmoke;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
     .cobertura{
         min-height: 100vh;
         width: 90%;
@@ -126,6 +133,17 @@
 
 @media only screen and (min-device-width : 601px) and (max-device-width : 1250px){
 /*------------------------------inicio planes----*/
+.nuestros_planes-container{
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(-65deg, blue, rgb(209, 48, 177));
+
+}
+.nuestros_planes{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: whitesmoke;
+}
 .planes-prin{
     min-height: 100vh;
     width: 80%;
@@ -224,6 +242,13 @@
     width: 20%;
     border-radius: 4px;
 }
+#cobertura{
+    background: linear-gradient(-65deg, blue, rgb(209, 48, 177));
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 .cobertura{
     min-height: 100vh;
     width: 90%;
@@ -245,6 +270,17 @@
     /*---------------------------------------fin planes----*/
 }
 @media screen and (max-width:600px){
+    .nuestros_planes-container{
+        align-items: center;
+        text-align: center;
+        background: linear-gradient(-65deg, blue, rgb(209, 48, 177));
+
+    }
+    .nuestros_planes{
+        padding-top: 10px;
+        padding-bottom: 20px;
+        color: whitesmoke;
+    }
     .planes-prin{
         min-height: 100vh;
         width: 80%;
@@ -342,6 +378,13 @@
         font-weight: 500;
         width: 20%;
         border-radius: 4px;
+    }
+    #cobertura{
+        background: linear-gradient(-65deg, blue, rgb(209, 48, 177));
+        color: whitesmoke;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     .cobertura{
         min-height: 100vh;
