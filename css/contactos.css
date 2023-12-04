@@ -134,7 +134,7 @@
 .item-select-slid {
     background: #FFF  !important;
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:600px)and (min-device-width : 300px){
     .test-tit{
         background: linear-gradient(-65deg, blue, rgb(209, 48, 177));
         color: whitesmoke;
