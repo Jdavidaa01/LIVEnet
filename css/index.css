@@ -338,43 +338,98 @@
         height: 300px;
     }
     /*----------------------------------------------PLANES-----------------*/
-    #nuestros-planes{
-        background: linear-gradient(-65deg, blue, rgb(209, 48, 177));
-        color:whitesmoke;
+    .cont-tit-color{
+        color:rgb(12, 12, 129);
+    }
+    .tit_tarj{
         text-align: center;
-        padding-top: 25px;
-        padding-bottom: 20px;
     }
-    #nuestros-planes .container{
-        padding: 150px 12px;
+    .tit_icon{
+        padding-left: 38%;      
     }
-    #nuestros-planes h2{
-        margin-top: 0;
-        font-size: 3.5em;
+    .wrapper {
+    display: grid;
+    margin: 100px 30px auto;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
-    #nuestros-planes h3{
-        margin-top: 0;
-        font-size: 3.2em;
-    }
-    #nuestros-planes p{
-        display: none;
-    }
-    .planes-prin{
-        min-height: 40vh;
-        width: 90%;
-        outline: 0px solid #000;
+
+    .wrapper .box {
+        width: 350px;
         margin: 0 auto;
-        display:grid;
-        grid-template-columns: 
-        repeat(auto-fit,minmax(min(350px,100%),1fr));
-        gap: 30px;
-       }
-       .planes_img{
+        position: relative;
+        perspective: 1000px;
+    }
+
+    .wrapper .box .front-face {
+        background: #fff;
+        height: 220px;
         width: 100%;
-        height: 100%;
-        object-fit: cover;
-       }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+        transition: all 0.5s ease;
+    }
+
+    .box .front-face .icon {
+        height: 80px;
+    }
+
+    .box .front-face .icon i {
+        font-size: 65px;
+    }
+
+    .box .front-face span,
+    .box .back-face span {
+        font-size: 22px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .box .front-face .icon i,
+    .box .front-face span {
+        background: linear-gradient(-135deg, #c850c0, #4158d0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .box .back-face {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        height: 220px;
+        width: 100%;
+        padding: 30px;
+        color: #fff;
+        opacity: 0;
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+        background: linear-gradient(-135deg, #c850c0, #4158d0);
+        transform: translateY(110px) rotateX(-90deg);
+        box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+        transition: all 0.5s ease;
+    }
+
+    .box .back-face p {
+        margin-top: 10px;
+        text-align: justify;
+    }
+
+    .box:hover .back-face {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+
+    .box:hover .front-face {
+        opacity: 0;
+        transform: translateY(-110px) rotateX(90deg);
+    }
     
+    /*-------------------------------------------------------*/
+}
+
 }
   
 

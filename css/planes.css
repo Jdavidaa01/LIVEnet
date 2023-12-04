@@ -1,4 +1,15 @@
 @media only screen and (min-device-width : 1251px) and (max-device-width : 1800px){
+    .nuestros_planes-container{
+        align-items: center;
+        text-align: center;
+        background: linear-gradient(-65deg, blue, rgb(209, 48, 177));
+
+    }
+    .nuestros_planes{
+        padding-top: 10px;
+        padding-bottom: 20px;
+        color: whitesmoke;
+    }
     .planes-prin{
         min-height: 100vh;
         width: 90%;
@@ -9,6 +20,12 @@
         repeat(auto-fit,minmax(min(350px,100%),1fr));
         gap: 30px;
        }    
+       .fondo{
+        background-image: url("/img/1239.jpg");
+        width: 100%;
+        opacity: 30%;
+       }
+
     /*==========================MODAL 1 Y PLAN 1==============================*/
     .modal-open{
         display: inline;
