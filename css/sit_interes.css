@@ -78,5 +78,10 @@
         padding-right: 10px;
         text-align: justify;
     }
+    .logo_color{
+        width: 10rem;
+        margin-block: 3px;
+    }
+
 
 /*----------------------------------foot--------------------------------------*/

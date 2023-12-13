@@ -1,4 +1,4 @@
-@media only screen and (min-device-width : 1251px) and (max-device-width : 1800px){
+
     .nuestros_planes-container{
         align-items: center;
         text-align: center;
@@ -11,7 +11,7 @@
         color: whitesmoke;
     }
     .planes-prin{
-        min-height: 100vh;
+        min-height: 60vh;
         width: 90%;
         outline: 0px solid #000;
         margin: 0 auto;
@@ -34,8 +34,8 @@
         transform: rotate(2deg);
     }
     .modal-img{
-        width: 100%;
-       height: 100%;
+       width: 100%;
+       height: max-content;
        object-fit: cover;
     }
     .modal{
@@ -115,7 +115,7 @@
         padding-bottom: 10px;
     }
     .cobertura{
-        min-height: 100vh;
+        min-height: 60vh;
         width: 90%;
         outline: 0px solid #000;
         margin: 0 auto;
@@ -126,10 +126,13 @@
     }
     .cobertura-content{
         width: 100%;
-        height: 100vh;
+        height: 70vh;
         object-fit: cover;
     }
-}
+    .logo_color{
+        width: 10rem;
+        margin-block: 3px;
+    }
 
 @media only screen and (min-device-width : 601px) and (max-device-width : 1250px){
 /*------------------------------inicio planes----*/
@@ -398,7 +401,7 @@
     }
     .cobertura-content{
         width: 100%;
-        height: 50vh;
+        
         object-fit: cover;
     }  
 }

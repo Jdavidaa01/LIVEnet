@@ -1,8 +1,5 @@
-
-@media only screen and (min-device-width : 300px) and (max-device-width : 1605px){
-    
     /*                               inicio body                               */
-    .test-tit{
+.test-tit{
         background: linear-gradient(-65deg, blue, rgb(209, 48, 177));
         color: whitesmoke;
         text-align: center;
@@ -17,7 +14,7 @@
     position: relative;
     display: block;
     width: 100%;
-    height: 50vh;
+    height: 85vh;
     min-height: 500px;
 }
 #slider li {
@@ -28,7 +25,7 @@
     top: 0 !important;
     left: 0 !important;
     width: 100%;
-    height: 100%;
+    height: 85vh;
     display: block;
     -webkit-transition: opacity 1s;
     -moz-transition: opacity 1s;
@@ -134,4 +131,12 @@
 .item-select-slid {
     background: #FFF  !important;
 }
+.logo_color{
+    width: 10rem;
+    margin-block: 3px;
+}
+.log{
+    width: 10rem;
+    margin-bottom: 0.5rem;
+
 }
